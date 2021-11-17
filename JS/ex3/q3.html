@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Experiment 3 Q3</title>
+</head>
+<body>
+	<script>
+		var first = function(array, n){
+			if (array == null)
+			return void 0;
+			if (n == null)
+			return array[0];
+			if (n<0)
+			return [];
+			return array.slice(0, n);
+		};
+		document.write(first([1,2,3,4])+ "<br>");
+		document.write(first(["First", "Second", "Third"]))
+	</script>
+</body>
+</html>

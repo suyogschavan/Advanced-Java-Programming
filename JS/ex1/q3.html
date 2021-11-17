@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>		
+	<title>Exeperiment 1 Que:3</title>
+</head>
+<body>
+	<h2>Write a program to calculate arithmetic operation using two numbers.</h2>
+	<script>
+
+		
+		var op = prompt("What you want to do? choose between ( +, -, *, /)");
+		var num1 = prompt("type first number")
+		var num2 = prompt("type second number")
+
+		switch(op) {
+			case '+':
+			document.write("Addition of " + num1 + " and " + num2+" is "+(num1+num2));
+			break;
+
+			case '-':
+			document.write("Subtraction of " + num1 + " and " + num2 + " is "+(num1-num2));
+			break;
+
+			case '*':
+			document.write("Multiplication of " + num1 + " and " + num2 + " is "+(num1*num2));
+			break;
+
+			case '/':
+			document.write("Division of " + num1 + " and " + num2 + " is "+(num1/num2));
+			break;
+		}
+
+	</script>
+</body>
+</html>
