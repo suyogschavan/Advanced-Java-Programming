@@ -1,7 +1,6 @@
 
 
 import javax.swing.*;
-import java.awt.*;
 import java.awt.event.*;
 
 public class MouseDemo1 extends JFrame implements MouseListener {

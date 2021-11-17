@@ -1,4 +1,4 @@
-package EX11;
+
 import java.awt.*;
 import java.awt.Graphics;
 import java.awt.event.*;
@@ -30,8 +30,8 @@ public void mouseDragged(MouseEvent e) {
 
 public void mouseMoved(MouseEvent e) {
     // TODO Auto-generated method stub
-    // Graphics g = this.getGraphics();
-    // g.fillRect(e.getX(), e.getY(), 20, 20);
+    Graphics g = this.getGraphics();
+    g.fillRect(e.getX(), e.getY(), 20, 20);
     label.setText("Mouse moving at possition X = "+e.getX()+" Y = "+e.getY());
 } 
 public static void main(String[] args) {
