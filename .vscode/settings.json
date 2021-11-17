@@ -1,5 +1,6 @@
 {
     "java.project.sourcePaths": [
+        "JAVA PROJECT",
         "Advanced JAVA/Chapter 2/EX4",
         "Advanced JAVA/Chapter 1/UNIT3_EVENT",
         "Advanced JAVA/Chapter 1/EX9",
@@ -12,6 +13,6 @@
         "Advanced JAVA/Chapter 1/EX11",
         "Advanced JAVA/Chapter 1/EX10",
         "Advanced JAVA/Chapter 1/EX1",
-        "JAVA PROJECT"
+        "Advanced JAVA/Chapter 1"
     ]
 }

@@ -1,4 +1,4 @@
-
+// package EX8;
 import javax.swing.*;
 class ToolTipExample extends JFrame{
 
