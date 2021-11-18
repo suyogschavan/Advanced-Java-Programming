@@ -1,6 +1,10 @@
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.*;
+import java.awt.Graphics;
+import java.awt.Image;
+import java.awt.Toolkit;
+import java.io.IOException;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
 
@@ -9,16 +13,31 @@ class OnlineTest extends JFrame implements ActionListener {
 	
 	private static final long serialVersionUID = 1L;
 
-	JLabel label;
+	JLabel label, background;
 	JRadioButton radioButton[] = new JRadioButton[5];
 	JButton btnNext, btnBack, btnBookmark;
 	ButtonGroup bg;
-
+	// Image img = Toolkit.getDefaultToolkit().getImage("H:\\DOCUMENTS\\Nothing\\Advanced JAVA\\Componants\\exam1.jpg");  
 	int count = 0, current = 0, x = 1, y = 1, now = 0;
 	int m[] = new int[10];
 
+	// public void paintComponent(Graphics g) {
+	// 	super.paintComponents(g);
+	// 	g.drawImage(img, 0, 0, null);
+	//  }
+
 	// create jFrame with radioButton and JButton
-	OnlineTest(String s) {
+	OnlineTest(String s) {  
+
+		// setContentPane(new JPanel(){
+		// 	@Override
+		// 	public void paintComponent(Graphics g) {
+		// 		super.paintComponent(g);
+		// 		g.drawImage(img, 0, 0, null);
+		// 	}
+		// });
+		
+		pack();
         // this.setUndecorated(true);
 		label = new JLabel();
 		add(label);
