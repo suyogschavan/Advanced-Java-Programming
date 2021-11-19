@@ -11,7 +11,7 @@ public class Score extends JFrame implements ActionListener{
         getContentPane().setBackground(Color.WHITE);
         setLayout(null);
         
-        ImageIcon i1 = new ImageIcon("H:/DOCUMENTS/Nothing/JAVA Project 2/Quiz-Application-Using-Java/src/simple/minds/icons/score.png");
+        ImageIcon i1 = new ImageIcon("H:/DOCUMENTS/Nothing/JAVA Project 3/score.png");
         Image i2 = i1.getImage().getScaledInstance(300, 250, Image.SCALE_DEFAULT);
         ImageIcon i3 = new ImageIcon(i2);
         JLabel l1 = new JLabel(i3);

@@ -1,4 +1,4 @@
-// package simple.minds;
+
 
 import javax.swing.*;
 import java.awt.*;
@@ -14,7 +14,7 @@ public class Project extends JFrame implements ActionListener{
         setLayout(null);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         
-        ImageIcon i1 = new ImageIcon("H:/DOCUMENTS/Nothing/JAVA Project 2/Quiz-Application-Using-Java/src/simple/minds/icons/login.jpeg");
+        ImageIcon i1 = new ImageIcon("H:/DOCUMENTS/Nothing/JAVA Project 3/login.jpeg");
         JLabel l1 = new JLabel(i1);
         l1.setBounds(0, 0, 600, 500);
         add(l1);
