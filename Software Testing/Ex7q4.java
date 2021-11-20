@@ -26,7 +26,7 @@ public class Ex7q4 {
                 
             }
 
-            return;
+            count++;
             
         }
         System.out.println(length);

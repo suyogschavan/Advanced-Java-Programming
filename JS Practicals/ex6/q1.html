@@ -9,11 +9,18 @@
 <body>
    
     <FORM>
-            <INPUT type=button value="Click to order" onClick="var currentBack; 
-            currentBack = document.bgColor; document.bgColor = 'blue'; 
-            document.bgColor = 'coral'; document.bgColor = 'yellow, red';
-            window.alert('Purchase confirmed. Thank you')">
+        <INPUT type=button value="Click to order" onClick="flash()">
   </FORM>
- 
+
+  <script>
+      function flash() {
+
+        var currentBack; 
+
+        currentBack = document.bgColor; document.bgColor = 'blue'; 
+        document.bgColor = 'red'; document.bgColor = 'yellow';
+        window.alert('Purchase confirmed. Thank you')
+      }
+  </script>
 </body>
 </html>

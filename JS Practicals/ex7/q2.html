@@ -9,13 +9,26 @@
 <body>
 
     <form action="">
-        <input type="checkbox" value="male" checked>male</input>
+        <input type="checkbox" id="myCheck" onclick="myFunction()">
+        <input type="label" value="CheckBox" id="check">
     </form>
 
-
-    <button id="btn">Get Selected Colors</button>
+<!-- 
+    <button id="btn">Get Selected Colors</button> -->
     <script>
 
+        function myFunction() {
+
+            var x = document.getElementById("myCheck");
+            var check = document.getElementById("check");
+
+            if (x.checked == true) {
+                 check.value ="CheckBox Checked"
+            }
+            else{
+                check.value ="CheckBox Unchecked"
+            }
+        }
 
 
     </script>

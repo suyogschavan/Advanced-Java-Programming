@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<form name="form1" action="">
+    <p>
+        Mobile No.: <input type="text" name="name" id="1" placeholder="Enter your mobile"/>
+    </p>
+    <input type="button" value="Test" onclick="phonenumber(document.form1.name)">
+</form>
+    <script>
+       
+       function phonenumber(inputtxt){
+  var phoneno = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
+  if((inputtxt.value.match(phoneno))){
+      alert("Valid Mobile entered")
+        }
+      else
+        {
+        alert("Invalid input");
+        
+        }
+}
+ 
+
+    </script>
+</body>
+</html>

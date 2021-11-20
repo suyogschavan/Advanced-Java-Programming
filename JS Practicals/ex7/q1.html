@@ -1,13 +1,30 @@
-<script>
-    function removedata() {
-
-        var x = document.getElementById("re");
-        x.remove(x.selectedIndex);
-        
-    }
-</script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
 <body>
     <form align="center" action="">
-        <select name="Car" id="re", size="4"></select>
+        <select name="list" id="i1">
+            <option>Red</option> 
+            <option>Green</option> 
+            <option>White</option> 
+            <option>Black</option> 
+        </select>
+        
+        <input type="button" onclick="removeItem()" value="Select and Remove">
     </form>
+
+    <script>
+        function removeItem() {
+    
+            var x = document.getElementById("i1");
+            x.remove(x.selectedIndex);
+            
+        }
+    </script>
 </body>
+</html>

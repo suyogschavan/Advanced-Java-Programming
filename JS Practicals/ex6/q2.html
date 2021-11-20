@@ -9,13 +9,42 @@
 <body>
     <div class="mail">
         <h2>Input password</h2>
+        <h3>Password should have -.</h3>
+        At least 1 uppercase character.
+            <br>  At least 1 lowercase character.
+            <br> At least 1 digit.
+            <br> At least 1 special symbol.
+            <br> Minimum 8 characters
         <form name="form1"action="">
             <ul>
-                <li><input type="text", name="text1"></li>
+                <li><input type="text", id="t1"></li>
+                <br>
+                <input type="button" value="Check" onclick="test_str()">
+                <br>
+                <br>
+                OUTPUT:- 
+                <br>
+                <br>
+                <li><input type="text", id="t2""></li>
             </ul>
         </form>
     </div>
     <script>
+
+    function test_str() {
+            var res;
+            var str =
+                document.getElementById("t1").value;
+            if (str.match(/[a-z]/g) && str.match(
+                    /[A-Z]/g) && str.match(
+                    /[0-9]/g) && str.match(
+                    /[^a-zA-Z\d]/g) && str.length >= 8)
+                res = "TRUE";
+            else
+                res = "FALSE";
+            document.getElementById("t2").value = res;
+  
+        }
 
     </script>
 </body>
