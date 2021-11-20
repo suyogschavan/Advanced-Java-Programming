@@ -8,20 +8,20 @@
 </head>
 <body>
     <form align = "center" action="">
-
-        <input type="text" id="t1"  onmouseup="up" onmousedown="down"></input>
-        
+    <div id = "t1" onmouseover="push()">
+        <input type="text"  onmouseup="up()"></input>
+    </div>   
     </form>
     <script>
 
-function up() {
+function push() {
     var x = document.getElementById("t1");
-    x.style.BackgroundColor = "black"
+    x.classList.toggle('blue')
 }
 
 function down() {
     var y = document.getElementById("t1");
-    y.style.BackgroundColor = "Blue"
+    y.style.Background = "Blue"
 }
 
     </script>
