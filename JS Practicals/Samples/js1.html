@@ -4,59 +4,46 @@
     <title>Loop</title>
 </head>
 <body>
+    <FORM name="myform" method="post">
+<P> 
+<select name="OptionList" size="2">
+       <option Value=1>Mango>
+       <option Value=2>Banana>
+</select> <BR>
+<!-- <INPUT TYPE="toggleButton" name="fruits" type="reset" value=1 onclick ="updateList(this.value)"> 
+      -->
+     <input type="radio" name="vehicles" checked = "true" value="1" onclick="resetoptionList(this.value)">Fruits</input>
+     <input type="radio" name="vehicles" value="2" onclick="resetoptionList(this.value)"> Vegetables</input>  
+     <input type="submit" value="Submit" type="submit" />
+     <input type="submit" value="Reset" type="reset" /> 
 
-    <script lang="javascript" type="text/javascript">
-    // var i=1;
+</P>
+</FORM>
 
-    // for ( i = 1; i <= 50; i++) {
-        
-    //     if (i % 2 == 0) {
-    //            document.write(i +  " is even<br>");
-    //     }
-
-    //     else {
-    //         document.write(i + " is odd<br>");
-    //     }
-    // }
-
-    // while (i<=15) {
-        
-    //     if (i%2==0) {
-    //             document.write(i+ " is even<br>")
-    //     } else {
-    //             document.write(i + " is odd<br>")
-    //     }
-    //     i++
-    
-    // }
-
-  
-// var i = 1;
-// var n = 5;
-
-// do {
-//     document.write("U Entered "+i+ "<br>");
-//     i++;
-// }while(i<=n)
+<script language="Javascript" type="text/javascript">
+    function resetoptionList(ElementValue){
+        with (document.forms.myform )
+        {
+        if (ElementValue == "Fruits")
+            {
+                toggleButton.value="Vegetables"
+                OptionList [0].text = "Mango"
+                 OptionList [0].value = 1
+                OptionList [1].text = "Banana"
+                OptionList [1].value = 2
+            }
+        if (ElementValue == "Vegetables")
+                {toggleButton.value="Fruits"
+                OptionList [0].text = Potato
+                OptionList [0].value = 1
+                OptionList [1].text = "Cabbage"
+                OptionList [1].value = 2
+                 }
+                }
+            }
 
 
-var p = prompt("Enter Value");
-
-    switch (p) {
-        case "1":
-            document.write("You entered 1")
-            break;
-        case "2":
-            document.write("You entered 2")
-            break;
-        case "3":
-            document.write("You entered 3")
-            break;
-    
-        default:
-            break;
-    }
-    
-    </script>
-</body>
-</html>
+</script>
+    </body>
+    </html>
+                

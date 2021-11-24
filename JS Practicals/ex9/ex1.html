@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name = "myform" method="post">
+
+        Select your favorite fruits: <br>
+        <input type="checkbox" name="a" value="apple" id="">Apple</input>
+        <input type="checkbox" name="b" value="banana" id="">Banana</input>
+        <input type="checkbox" name="c" value="orange" id="">Orange</input>
+        <input type="checkbox" name="d" value="pear" id="">Pear</input>
+        <input type="checkbox" name="e" value="grapes" id="">Grapes</input>
+
+        <input type="button" onclick="selection()">
+
+
+    </form>
+  
+    
+
+    <script>
+        function selection() {
+
+            var x= "You have selected ::"
+            with(document.form.myform)
+            if (a.checked==true) {
+                x+=a.value+" ";
+            }
+            if (b.checked==true) {
+                x+=b.value+" ";
+            }
+            if (c.checked==true) {
+                x+=c.value+" ";
+            }
+            if (b.checked==true) {
+                x+=d.value+" ";
+            }
+            if (e.checked==true) {
+                x+=e.value+" ";
+            }
+
+          document.write(x);
+        }
+    </script>
+</body>
+</html>

@@ -7,7 +7,7 @@
 <body onload='document.form1.text1.focus()'>
 <div class="mail">
 <h2>Input an email and Submit</h2>
-<form name="form1" action="#"> 
+<form name="form1"> 
 <ul>
 <input type='text' name='text1'/>
 
@@ -19,7 +19,7 @@
 <script>
     function ValidateEmail(inputText)
 {
-var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+var mailformat = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 if(inputText.value.match(mailformat))
 {
 alert("Valid email address!");

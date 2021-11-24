@@ -1,27 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        #abc * {
+  color: currentcolor;
+}
+    </style>
 </head>
 <body>
-    <form align = "center" action="">
-    <div id = "t1" onmouseover="push()">
-        <input type="text"  onmouseup="up()"></input>
-    </div>   
-    </form>
+
+<div id="abc">
+  <input type="text" value="Sample Text" onmouseover="mouseOver()" onmouseout="mouseOut()">
+</div>
+
     <script>
 
-function push() {
-    var x = document.getElementById("t1");
-    x.classList.toggle('blue')
+function mouseOver() {
+  document.getElementById("abc").style.color = "blue";
 }
 
-function down() {
-    var y = document.getElementById("t1");
-    y.style.Background = "Blue"
+function mouseOut() {
+  document.getElementById("abc").style.color = "red";
 }
 
     </script>

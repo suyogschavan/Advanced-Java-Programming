@@ -1,10 +1,11 @@
 {
     "java.project.sourcePaths": [
+        "Software Testing",
         "JAVA Project 3",
         "JAVA PROJECT",
         "Advanced JAVA/Practicals/EX11",
         "Advanced JAVA/Practicals/EX09",
         "Advanced JAVA/Practicals/EX04",
-        "Software Testing"
+        "Advanced JAVA/Practicals/EX12"
     ]
 }
