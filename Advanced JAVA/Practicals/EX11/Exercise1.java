@@ -42,7 +42,7 @@ public class Exercise1 extends JFrame implements MouseListener {
         this.getContentPane().setBackground(Color.WHITE);
     }
     public static void main(String[] args) {
-        new Exercise1();
+        new ExerciseQue1();
     }
 
     

@@ -1,5 +1,4 @@
 
-
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
@@ -8,6 +7,7 @@ public class Rules extends JFrame implements ActionListener{
     JButton b1, b2;
     String username;
     String enrollment;
+    JCheckBox check;
     Rules(String username, String enrollment){
         this.username = username;
         this.enrollment = enrollment;
@@ -33,7 +33,6 @@ public class Rules extends JFrame implements ActionListener{
                 "5. Only a fool asks and a wise answers (Be wise, not otherwise)" + "<br><br>" +
                 "6. Do not get nervous if your friend is answering more questions, may be he/she is doing Jai Mata Di" + "<br><br>" +
                 "7. Brace yourself, this paper is not for the faint hearted" + "<br><br>" +
-                "8. May you know more than what John Snow knows, Good Luck" + "<br><br>" +
             "<html>"
         );
         add(l2);
@@ -45,15 +44,34 @@ public class Rules extends JFrame implements ActionListener{
         b1.addActionListener(this);
         add(b1);
         
+
+
+        check = new JCheckBox("I accept all the turms and conditions mantioned above.");
+        add(check);
+        check.setBounds(50, 450, 340, 30);
+        check.addItemListener(new ItemListener() {
+            public void itemStateChanged(ItemEvent e) {
+                if (e.getStateChange() == 1) {
+                    b2.setEnabled(true);
+                } else {
+                    b2.setEnabled(false);
+                }
+            }
+        });
+
+
         b2 = new JButton("Start");
         b2.setBounds(400, 500, 100, 30);
         b2.setBackground(new Color(30, 144, 255));
         b2.setForeground(Color.WHITE);
         b2.addActionListener(this);
         add(b2);
+        b2.setEnabled(false);
         
         setVisible(true);
     }
+
+    
     
     public void actionPerformed(ActionEvent ae){
         if(ae.getSource() == b1){

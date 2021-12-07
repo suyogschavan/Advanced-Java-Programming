@@ -1,0 +1,137 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Client2",
+            "request": "launch",
+            "mainClass": "EXQ1.Client2",
+            "projectName": "Nothing_bdd6fb59"
+        },
+        {
+            "type": "java",
+            "name": "Launch Server1",
+            "request": "launch",
+            "mainClass": "Server1",
+            "projectName": "Nothing_bdd6fb59"
+        },
+        {
+            "type": "java",
+            "name": "Launch Client1",
+            "request": "launch",
+            "mainClass": "Client1",
+            "projectName": "Nothing_bdd6fb59"
+        },
+        {
+            "type": "java",
+            "name": "Launch Socket1",
+            "request": "launch",
+            "mainClass": "Socket1",
+            "projectName": "Nothing_bdd6fb59"
+        },
+        {
+            "type": "java",
+            "name": "Launch DServer",
+            "request": "launch",
+            "mainClass": "DATAGRAMex.DServer",
+            "projectName": "Nothing_bdd6fb59"
+        },
+        {
+            "type": "java",
+            "name": "Launch DSender",
+            "request": "launch",
+            "mainClass": "DATAGRAMex.DSender",
+            "projectName": "Nothing_bdd6fb59"
+        },
+        {
+            "type": "java",
+            "name": "Launch Program1",
+            "request": "launch",
+            "mainClass": "Program1",
+            "projectName": "Nothing_bdd6fb59"
+        },
+        {
+            "type": "java",
+            "name": "Launch PasswordFieldExample",
+            "request": "launch",
+            "mainClass": "PasswordFieldExample",
+            "projectName": "Nothing_bdd6fb59"
+        },
+        {
+            "type": "java",
+            "name": "Launch keyBourdAsSource",
+            "request": "launch",
+            "mainClass": "EX10.keyBourdAsSource",
+            "projectName": "Nothing_bdd6fb59"
+        },
+        {
+            "type": "java",
+            "name": "Launch keyBourdAsSource",
+            "request": "launch",
+            "mainClass": "keyBourdAsSource",
+            "projectName": "Nothing_bdd6fb59"
+        },
+        {
+            "type": "java",
+            "name": "Launch Project",
+            "request": "launch",
+            "mainClass": "Project",
+            "projectName": "Nothing_bdd6fb59"
+        },
+        {
+            "type": "java",
+            "name": "Launch Rules",
+            "request": "launch",
+            "mainClass": "Rules",
+            "projectName": "Nothing_bdd6fb59"
+        },
+        {
+            "type": "java",
+            "name": "Launch URLDemo",
+            "request": "launch",
+            "mainClass": "URLConnection.URLDemo",
+            "projectName": "Nothing_bdd6fb59"
+        },
+        {
+            "type": "java",
+            "name": "Launch ExerciseQue2",
+            "request": "launch",
+            "mainClass": "ExerciseQue2",
+            "projectName": "Nothing_bdd6fb59"
+        },
+        {
+            "type": "java",
+            "name": "Launch ExerciseQue1",
+            "request": "launch",
+            "mainClass": "ExerciseQue1",
+            "projectName": "Nothing_bdd6fb59"
+        },
+        {
+            "type": "java",
+            "name": "Launch Exercise1",
+            "request": "launch",
+            "mainClass": "Exercise1",
+            "projectName": "Nothing_bdd6fb59"
+        },
+        {
+            "type": "java",
+            "name": "Launch q1",
+            "request": "launch",
+            "mainClass": "q1",
+            "projectName": "Nothing_bdd6fb59"
+        },
+        {
+            "type": "java",
+            "name": "Launch URLDemo1",
+            "request": "launch",
+            "mainClass": "URLDemo1",
+            "projectName": "Nothing_bdd6fb59"
+        },
+        {
+            "type": "java",
+            "name": "Launch URLDemo",
+            "request": "launch",
+            "mainClass": "URLDemo",
+            "projectName": "Nothing_bdd6fb59"
+        }
+    ]
+}

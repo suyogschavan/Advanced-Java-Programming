@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>EX 11 by Suyog Chavan 71</title>
+</head>
+
+<body>
+
+    <button onclick="windowOpen()"> Open google</button>
+    <button onclick="windowClose()">Close google</button>
+
+    <script>
+        var Window;
+
+        // Function that open the new Window
+        function windowOpen() {
+            Window = window.open(
+                "https://www.google.com/", "google", "width=400, toolbar=yes, status=yes, titlebar=yes, height=450 top=500,left=500");
+        }
+
+        // function that Closes the open Window
+        function windowClose() {
+            Window.close();
+        }
+    </script>
+
+</body>
+</html>

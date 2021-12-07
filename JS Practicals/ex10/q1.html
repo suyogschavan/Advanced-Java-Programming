@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>EX 10 by Suyog Chavan </title>
+</head>
+
+<body>
+
+    <input type="button" value="setCookie" onclick="setCookie()">
+    <input type="button" value="checkCookie" onclick="checkCookie()">
+    <input type="button" value="getCookie" onclick="getCookie()">
+    <input type="button" value="deleteCookie" onclick="deleteCookie()">
+
+    <script>
+        var name;
+
+        function setCookie() {
+
+            name = prompt("Enter Coockie Name:");
+            document.cookie = " Cookie : " + name;
+            cookie1 = document.cookie;
+
+        }
+
+        function checkCookie() {
+            if (document.cookie.length != 0) {
+                alert("Cookie is set correctly");
+            } else {
+                alert("Cookie not available");
+            }
+        }
+
+        function getCookie() {
+            alert(document.cookie);
+        }
+
+        function deleteCookie() {
+            document.cookie = cookie1 + ";max-age=0";
+            cookie1 = document.cookie;
+            alert("Coockie: " + name + " is deleted");
+        }
+    </script>
+</body>
+
+</html>
