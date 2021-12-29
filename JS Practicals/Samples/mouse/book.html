@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function openNewWindow(book) {
+            if (book == 1) {
+                document.cover.src = '/JS Practicals/Samples/login.jpeg'
+                MyWindow = window.open('', 'myWindow', 'height="50", width="50"')
+                MyWindow.document.write("10% discount")
+            }
+            if (book == 2) {
+
+            }
+        }
+    </script>
+
+
+    <a onmouseover='openNewWindow(1)' onmouseout='MyWindow.close()'>
+        <b><u>Java </u></b>
+    </a>
+
+    <a onmouseover='openNewWindow(2)' onmouseout='MyWindow.close()'>
+        <b><u>OOP</u></b>
+    </a>
+
+
+
+</body>
+
+</html>

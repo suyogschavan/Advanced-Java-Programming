@@ -79,7 +79,7 @@ public class Rules extends JFrame implements ActionListener{
             new Project().setVisible(true);
         }else if(ae.getSource() == b2){
             this.setVisible(false);
-            new Quiz(username).setVisible(true);
+            new Quiz(username, enrollment).setVisible(true);
         }
     }
     

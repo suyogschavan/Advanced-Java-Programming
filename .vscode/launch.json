@@ -2,6 +2,69 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Score",
+            "request": "launch",
+            "mainClass": "Score",
+            "projectName": "Nothing_bdd6fb59"
+        },
+        {
+            "type": "java",
+            "name": "Launch DynamicInsertion",
+            "request": "launch",
+            "mainClass": "DynamicInsertion",
+            "projectName": "Nothing_bdd6fb59"
+        },
+        {
+            "type": "java",
+            "name": "Launch InsertValues",
+            "request": "launch",
+            "mainClass": "InsertValues",
+            "projectName": "Nothing_bdd6fb59"
+        },
+        {
+            "type": "java",
+            "name": "Launch CheckDrivers1",
+            "request": "launch",
+            "mainClass": "CheckDrivers1",
+            "projectName": "Nothing_bdd6fb59"
+        },
+        {
+            "type": "java",
+            "name": "Launch Statementex",
+            "request": "launch",
+            "mainClass": "Statementex",
+            "projectName": "Nothing_bdd6fb59"
+        },
+        {
+            "type": "java",
+            "name": "Launch FirstStatement",
+            "request": "launch",
+            "mainClass": "FirstStatement",
+            "projectName": "Nothing_bdd6fb59"
+        },
+        {
+            "type": "java",
+            "name": "Launch CheckDrivers",
+            "request": "launch",
+            "mainClass": "CheckDrivers",
+            "projectName": "Nothing_bdd6fb59"
+        },
+        {
+            "type": "java",
+            "name": "Launch Server1",
+            "request": "launch",
+            "mainClass": "Q2.Server1",
+            "projectName": "Nothing_bdd6fb59"
+        },
+        {
+            "type": "java",
+            "name": "Launch Client1",
+            "request": "launch",
+            "mainClass": "Q2.Client1",
+            "projectName": "Nothing_bdd6fb59"
+        },
+        {
+            "type": "java",
             "name": "Launch Client2",
             "request": "launch",
             "mainClass": "EXQ1.Client2",

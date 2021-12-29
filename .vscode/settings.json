@@ -1,21 +1,15 @@
 {
     "java.project.sourcePaths": [
         "Software Testing",
+        "JDBC/JDBC/src",
         "JAVA_Project_3",
-        "Advanced JAVA/Practicals/EX15",
-        "Advanced JAVA/Practicals/EX14",
-        "Advanced JAVA/Practicals/EX13",
-        "Advanced JAVA/Practicals/EX12",
-        "Advanced JAVA/Practicals/EX11",
-        "Advanced JAVA/Practicals/EX10",
-        "Advanced JAVA/Practicals/EX09",
-        "Advanced JAVA/Practicals/EX04",
-        "Advanced JAVA/Networking",
-        "Advanced JAVA/Practicals/EX16"
+        "Advanced_JAVA/JDBC",
+        "Advanced_JAVA/Practicals/EX17"
     ],
     "java.project.referencedLibraries": [
         "lib/**/*.jar",
-        "h:\\DOWNLOADS\\mysql-connector-java-8.0.27.jar"
+        "h:\\DOWNLOADS\\mysql-connector-java-8.0.27.jar",
+        "c:\\Users\\Suyog_Asus\\Tom\\lib\\servlet-api.jar"
     ],
     "C_Cpp.errorSquiggles": "Disabled",
     "jupyter.jupyterServerType": "local",

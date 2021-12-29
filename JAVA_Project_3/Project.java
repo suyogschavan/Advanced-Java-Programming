@@ -35,10 +35,11 @@ public class Project extends JFrame implements ActionListener {
         b1.setBounds(735, 340, 120, 25);
         b1.setBackground(new Color(30, 144, 254));
         b1.setForeground(Color.WHITE);
-
-        b1.setVisible(false);
+        // b1.setVisible(false);
         add(b1);
         b1.addActionListener(this);
+
+
         t1 = new JTextField();
         t1.setToolTipText("(First Name) (Last Name)");
         t1.setBounds(735, 200, 300, 25);

@@ -2,10 +2,26 @@
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
+import java.sql.*;
 
 public class Score extends JFrame implements ActionListener {
 
-    Score(String username, int score) {
+    Score(String username, String enrollment, int score) throws ClassNotFoundException, SQLException {
+
+        Class.forName("com.mysql.cj.jdbc.Driver");
+        String url = "jdbc:mysql://localhost:3306/microproject";
+        Connection conn = DriverManager.getConnection(url, "root", "Suyog#2003");
+
+        PreparedStatement p = conn.prepareStatement("insert into microproject.studentsData values(?,?,?,?)");
+
+        p.setString(1, null);
+        p.setString(2, username);
+        p.setString(3, enrollment);
+        p.setInt(4, score);
+
+        int update = p.executeUpdate();
+        System.out.println("data inserted " + update);
+
         setBounds(600, 150, 750, 550);
         getContentPane().setBackground(Color.WHITE);
         setLayout(null);
@@ -21,15 +37,6 @@ public class Score extends JFrame implements ActionListener {
         l4.setFont(new Font("RALEWAY", Font.BOLD, 26));
 
         l4.setBounds(500, 60, 300, 250);
-        if (score >= 90) {
-            l4.setText("You scored OUT OFF");
-        } else if (score <= 89 && score > 80) {
-            l4.setText("Nice");
-        } else if (score < 79 && score > 50) {
-            l4.setText("You Passed !");
-        } else {
-            l4.setText("You Failed");
-        }
         JLabel l2 = new JLabel(" " + username + " your Quize Exam ended Successfully!");
         l2.setBounds(45, 110, 700, 30);
         l2.setFont(new Font("RALEWAY", Font.PLAIN, 26));
@@ -48,6 +55,7 @@ public class Score extends JFrame implements ActionListener {
 
         b1.setBounds(500, 400, 120, 30);
         add(b1);
+
     }
 
     public void actionPerformed(ActionEvent ae) {
@@ -55,7 +63,8 @@ public class Score extends JFrame implements ActionListener {
         System.exit(0);
     }
 
-    public static void main(String[] args) {
-        new Score("", 0).setVisible(true);
+    public static void main(String[] args) throws ClassNotFoundException, SQLException {
+        new Score("", "", 0).setVisible(true);
+
     }
 }

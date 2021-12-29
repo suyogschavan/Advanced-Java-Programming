@@ -3,6 +3,7 @@
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
+import java.sql.SQLException;
 
 public class Quiz extends JFrame implements ActionListener{
     
@@ -19,8 +20,10 @@ public class Quiz extends JFrame implements ActionListener{
     ButtonGroup options;
     
     String username;
-    Quiz(String username){
+    String enrollment;
+    Quiz(String username, String enrollment){
         this.username = username;
+        this.enrollment = enrollment;
         setBounds(250, 50, 1440, 950);
         getContentPane().setBackground(Color.WHITE);
         setLayout(null);
@@ -138,11 +141,16 @@ public class Quiz extends JFrame implements ActionListener{
         opt4.setBackground(Color.WHITE);
         add(opt4);
         
+        
         options = new ButtonGroup();
         options.add(opt1);
         options.add(opt2);
         options.add(opt3);
         options.add(opt4);
+
+
+
+        
         
         next = new JButton("Next");
         next.setFont(new Font("Tahoma", Font.PLAIN, 22));
@@ -211,7 +219,12 @@ public class Quiz extends JFrame implements ActionListener{
                 }
             }
             this.setVisible(false);
-            new Score(username, score).setVisible(true);
+            try {
+                new Score(username, enrollment, score).setVisible(true);
+            } catch (ClassNotFoundException | SQLException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }
             
         }else if(ae.getSource() == lifeline){
             if(count == 2 || count == 4 || count == 6 || count == 8 || count == 9){
@@ -275,7 +288,15 @@ public class Quiz extends JFrame implements ActionListener{
                     }
                 }
                 this.setVisible(false);
-                new Score(username, score).setVisible(true);
+                try {
+                    new Score(username, enrollment, score).setVisible(true);
+                } catch (ClassNotFoundException e) {
+                    // TODO Auto-generated catch block
+                    e.printStackTrace();
+                } catch (SQLException e) {
+                    // TODO Auto-generated catch block
+                    e.printStackTrace();
+                }
                 
             }else{
                 if(options.getSelection() == null){
@@ -304,6 +325,6 @@ public class Quiz extends JFrame implements ActionListener{
     }
     
     public static void main(String[] args){
-        new Quiz("").setVisible(true);
+        new Quiz("", "").setVisible(true);
     }
 }
