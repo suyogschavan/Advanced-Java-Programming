@@ -1,3 +1,5 @@
+package Advanced_JAVA.Practicals;
+
 // package EX8;
 import javax.swing.*;
 class ToolTipExample extends JFrame{

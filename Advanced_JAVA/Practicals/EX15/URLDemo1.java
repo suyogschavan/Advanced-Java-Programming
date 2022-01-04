@@ -1,3 +1,5 @@
+package Advanced_JAVA.Practicals.EX15;
+
 import java.net.*;
 
 class URLDemo1 {

@@ -1,4 +1,4 @@
-package EXQ1;
+package Advanced_JAVA.Practicals.EX16.EXQ1;
 import java.util.*;
 import java.io.*;
 import java.net.*;

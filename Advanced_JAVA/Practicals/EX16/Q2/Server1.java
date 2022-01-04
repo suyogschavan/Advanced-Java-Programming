@@ -1,4 +1,4 @@
-package Q2;
+package Advanced_JAVA.Practicals.EX16.Q2;
 
 import java.net.*;
 import java.io.*;
